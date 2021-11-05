@@ -1,0 +1,21 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild index.js --bundle  --outfile=bundle.js --watch",
+    "test": "jest"
+  },
+  "author": "Kostas Ntanos",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "esbuild": "^0.13.12",
+    "express": "^4.17.1"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "description": "Notes JS practice",
+  "devDependencies": {}
+}
