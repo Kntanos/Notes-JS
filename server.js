@@ -15,23 +15,10 @@ app.get('/', (req, res) => {
 });
 
 
-app.post('/', (req, res) => {
-  console.log(req);
-  // const options = {
-  //   method: 'POST',
-  //   headers: {
-  //     'Content-Type': 'application/json';
-  //   },
-  //   body: JSON.stringify({req})
-  // }
-  // fetch('/', options)
-  // .then((result) => {
-  //   return result.json();
-  // })
-  // .then((data) => {
-  //   console.log(data);
-  // })
-  res.send('Hello!');
+app.post('/note', (req, res) => {
+  console.log(req.body);
+  // res.json(req.body);
+  // noteBook.addNote(req.body);
 });
 
 

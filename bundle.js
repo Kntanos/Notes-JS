@@ -3,12 +3,14 @@
   var buttonEl = document.getElementById("btn");
   var inputEl = document.getElementById("note");
   buttonEl.addEventListener("click", () => {
-    let newNote = inputEl.value;
-    fetch("/").then((response) => {
-      return response.json();
-    }).then((data) => {
-      console.log(data);
-    });
+    const options = {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify()
+    };
+    fetch("/note", options);
     inputEl.value = "";
   });
 })();
